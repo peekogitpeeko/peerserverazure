@@ -1,4 +1,5 @@
 const express = require('express');
+const port = process.env.PORT || 3000
 const cors = require('cors');
 const { PeerServer } = require("peer");
 const peerServer = PeerServer({ port: 9000, path: "/myapp" });
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
 
 // const port = 3000; // Choose a port number
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log(`Server is running`);
+app.listen(port, () => {
+  console.log(`Server is running1`);
 });
 
