@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.send({"item": "hello world shyam"});
   });
 
 const port = 3000; // Choose a port number
