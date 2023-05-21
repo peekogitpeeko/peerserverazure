@@ -10,8 +10,9 @@ app.get('/', (req, res) => {
     res.send({"item": "hello world shyam"});
   });
 
-const port = 3000; // Choose a port number
+// const port = 3000; // Choose a port number
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(process.env.PORT || 3001, () => {
+  console.log(`Server is running`);
 });
+
